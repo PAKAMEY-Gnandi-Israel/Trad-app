@@ -4,7 +4,7 @@ import 'package:miagbo/models/trad.dart';
 import 'package:http/http.dart' as http;
 import 'package:miagbo/models/traduction.dart';
 class Services{
-   var url = "https://traduction.getsandbox.com";
+   var url = "https://trad-api.herokuapp.com/api/traduction";
 Future <List<Trad>> getTrad() async{
 
     

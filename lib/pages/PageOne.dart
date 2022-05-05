@@ -24,11 +24,11 @@ class _PageOneState extends State<PageOne> with TickerProviderStateMixin{
    Future <List<Trad>> futureData;
     Future <List<Traduction>> futureCat;
     Future <List<Trad>> futureExp;
-      var url = "https://traduction.getsandbox.com";
+      var url = "https://trad-api.herokuapp.com/api/traduction";
     List<Trad> _generalWidgets =  List<Trad>.empty();
        Future <Exp> getExp(int id) async{
     
-    final response = await http.get(Uri.parse('https://traduction.getsandbox.com/trads?cat=$id'),
+    final response = await http.get(Uri.parse('https://trad-api.herokuapp.com/api/trads/$id'),
         headers: <String, String>{
           'Content-Type': 'application/json; charset=UTF-8',
       
